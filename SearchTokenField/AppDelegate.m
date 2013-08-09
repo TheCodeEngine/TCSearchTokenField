@@ -22,10 +22,10 @@
 {
     tags = [[NSMutableArray alloc] initWithArray:@[[[Tag alloc] initWithTitle:@"Tag 1"],
                                                    [[Tag alloc] initWithTitle:@"Tag 2"],
-                                                   [[Tag alloc] initWithTitle:@"Tag 12"]
+                                                   [[Tag alloc] initWithTitle:@"Tag 3"]
     ]];
-    lists = [[NSMutableArray alloc] initWithArray:@[[[List alloc] initWithTitle:@"Inbox"],
-                                                    [[List alloc] initWithTitle:@"Analysis"],
+    lists = [[NSMutableArray alloc] initWithArray:@[[[List alloc] initWithTitle:@"List 1"],
+                                                    [[List alloc] initWithTitle:@"List 2"],
                                                     [[List alloc] initWithTitle:@"List 3"]
     ]];
     // Insert code here to initialize your application
@@ -47,7 +47,7 @@
 }
 - (void)searchFieldDelegateTags:(NSMutableArray *)tagStringArray lists:(NSMutableArray *)listsStringArray otherToken:(NSMutableArray *)otherToken
 {
-    NSLog(@"Tokens:\n\tTags: %@\n\tLists: %@\n\tOther: %@", tagStringArray, listsStringArray, otherToken);
+    NSLog(@"Tokens:\nTags: %@\nLists: %@\nOther: %@", tagStringArray, listsStringArray, otherToken);
 }
 
 @end

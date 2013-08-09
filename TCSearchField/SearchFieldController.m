@@ -89,10 +89,26 @@
     NSMutableArray *completeToken = [[NSMutableArray alloc] init];
     [completeToken addObject:substring];
     [self.tags enumerateObjectsUsingBlock:^(Tag *obj, NSUInteger idx, BOOL *stop) {
-        [completeToken addObject:obj.title];
+        NSString *objString = obj.title;
+        if ( [objString length] > [substring length] )
+        {
+            objString = [objString substringToIndex:[substring length]];
+        }
+        if ( [[objString lowercaseString] isEqualToString:[substring lowercaseString]] )
+        {
+            [completeToken addObject:obj.title];
+        }
     }];
     [self.lists enumerateObjectsUsingBlock:^(List *obj, NSUInteger idx, BOOL *stop) {
-        [completeToken addObject:obj.title];
+        NSString *objString = obj.title;
+        if ( [objString length] > [substring length] )
+        {
+            objString = [objString substringToIndex:[substring length]];
+        }
+        if ( [[objString lowercaseString] isEqualToString:[substring lowercaseString]] )
+        {
+            [completeToken addObject:obj.title];
+        }
     }];
     return completeToken;
 }
