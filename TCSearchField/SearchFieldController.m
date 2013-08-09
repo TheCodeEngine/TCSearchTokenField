@@ -87,7 +87,6 @@
 - (NSArray *)tokenField:(NSTokenField *)tokenField completionsForSubstring:(NSString *)substring indexOfToken:(NSInteger)tokenIndex indexOfSelectedItem:(NSInteger *)selectedIndex
 {
     NSMutableArray *completeToken = [[NSMutableArray alloc] init];
-    [completeToken addObject:substring];
     [self.tags enumerateObjectsUsingBlock:^(Tag *obj, NSUInteger idx, BOOL *stop) {
         NSString *objString = obj.title;
         if ( [objString length] > [substring length] )
@@ -110,8 +109,13 @@
             [completeToken addObject:obj.title];
         }
     }];
+    if ( [completeToken count] > 0 )
+    {
+        [completeToken insertObject:substring atIndex:0];
+    }
     return completeToken;
 }
+
 
 - (id)tokenField:(NSTokenField *)tokenField representedObjectForEditingString: (NSString *)editingString
 {
