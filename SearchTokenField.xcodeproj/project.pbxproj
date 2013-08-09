@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		DA7EE9CF17B51AAB006C1669 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE9CE17B51AAB006C1669 /* Tag.m */; };
 		DA7EE9D217B51AC8006C1669 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE9D117B51AC8006C1669 /* List.m */; };
+		DA7EE9DC17B52AE6006C1669 /* SearchFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE9DA17B52AE6006C1669 /* SearchFieldController.m */; };
 		DADE920117B51585002AE752 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADE920017B51585002AE752 /* Cocoa.framework */; };
 		DADE920B17B51585002AE752 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DADE920917B51585002AE752 /* InfoPlist.strings */; };
 		DADE920D17B51585002AE752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE920C17B51585002AE752 /* main.m */; };
 		DADE921117B51585002AE752 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DADE920F17B51585002AE752 /* Credits.rtf */; };
 		DADE921417B51585002AE752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE921317B51585002AE752 /* AppDelegate.m */; };
 		DADE921717B51586002AE752 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADE921517B51586002AE752 /* MainMenu.xib */; };
-		DADE922A17B5166F002AE752 /* SearchFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE922917B5166F002AE752 /* SearchFieldController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,9 @@
 		DA7EE9CE17B51AAB006C1669 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		DA7EE9D017B51AC8006C1669 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		DA7EE9D117B51AC8006C1669 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
-		DA7EE9D617B5254B006C1669 /* SearchFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFieldDelegate.h; sourceTree = "<group>"; };
+		DA7EE9D917B52AE6006C1669 /* SearchFieldController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFieldController.h; sourceTree = "<group>"; };
+		DA7EE9DA17B52AE6006C1669 /* SearchFieldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchFieldController.m; sourceTree = "<group>"; };
+		DA7EE9DB17B52AE6006C1669 /* SearchFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFieldDelegate.h; sourceTree = "<group>"; };
 		DADE91FD17B51585002AE752 /* SearchTokenField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchTokenField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADE920017B51585002AE752 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DADE920317B51585002AE752 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -37,8 +39,6 @@
 		DADE921217B51585002AE752 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DADE921317B51585002AE752 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DADE921617B51586002AE752 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		DADE922817B5166F002AE752 /* SearchFieldController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFieldController.h; sourceTree = "<group>"; };
-		DADE922917B5166F002AE752 /* SearchFieldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchFieldController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,19 +53,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA7EE9D717B52556006C1669 /* SearchBar */ = {
+		DA7EE9D817B52AE6006C1669 /* TCSearchField */ = {
 			isa = PBXGroup;
 			children = (
-				DA7EE9D617B5254B006C1669 /* SearchFieldDelegate.h */,
-				DADE922817B5166F002AE752 /* SearchFieldController.h */,
-				DADE922917B5166F002AE752 /* SearchFieldController.m */,
+				DA7EE9D917B52AE6006C1669 /* SearchFieldController.h */,
+				DA7EE9DA17B52AE6006C1669 /* SearchFieldController.m */,
+				DA7EE9DB17B52AE6006C1669 /* SearchFieldDelegate.h */,
 			);
-			name = SearchBar;
+			path = TCSearchField;
 			sourceTree = "<group>";
 		};
 		DADE91F417B51585002AE752 = {
 			isa = PBXGroup;
 			children = (
+				DA7EE9D817B52AE6006C1669 /* TCSearchField */,
 				DADE920617B51585002AE752 /* SearchTokenField */,
 				DADE91FF17B51585002AE752 /* Frameworks */,
 				DADE91FE17B51585002AE752 /* Products */,
@@ -108,7 +109,6 @@
 				DA7EE9D117B51AC8006C1669 /* List.m */,
 				DADE921217B51585002AE752 /* AppDelegate.h */,
 				DADE921317B51585002AE752 /* AppDelegate.m */,
-				DA7EE9D717B52556006C1669 /* SearchBar */,
 				DADE921517B51586002AE752 /* MainMenu.xib */,
 				DADE920717B51585002AE752 /* Supporting Files */,
 			);
@@ -193,9 +193,9 @@
 			files = (
 				DADE920D17B51585002AE752 /* main.m in Sources */,
 				DADE921417B51585002AE752 /* AppDelegate.m in Sources */,
-				DADE922A17B5166F002AE752 /* SearchFieldController.m in Sources */,
 				DA7EE9CF17B51AAB006C1669 /* Tag.m in Sources */,
 				DA7EE9D217B51AC8006C1669 /* List.m in Sources */,
+				DA7EE9DC17B52AE6006C1669 /* SearchFieldController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
