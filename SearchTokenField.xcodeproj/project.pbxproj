@@ -56,17 +56,28 @@
 		DA7EE9D817B52AE6006C1669 /* TCSearchField */ = {
 			isa = PBXGroup;
 			children = (
+				DA7EE9DB17B52AE6006C1669 /* SearchFieldDelegate.h */,
 				DA7EE9D917B52AE6006C1669 /* SearchFieldController.h */,
 				DA7EE9DA17B52AE6006C1669 /* SearchFieldController.m */,
-				DA7EE9DB17B52AE6006C1669 /* SearchFieldDelegate.h */,
 			);
-			path = TCSearchField;
+			name = TCSearchField;
+			path = ../TCSearchField;
+			sourceTree = "<group>";
+		};
+		DA7EE9DD17B52BE2006C1669 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EE9CD17B51AAB006C1669 /* Tag.h */,
+				DA7EE9CE17B51AAB006C1669 /* Tag.m */,
+				DA7EE9D017B51AC8006C1669 /* List.h */,
+				DA7EE9D117B51AC8006C1669 /* List.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		DADE91F417B51585002AE752 = {
 			isa = PBXGroup;
 			children = (
-				DA7EE9D817B52AE6006C1669 /* TCSearchField */,
 				DADE920617B51585002AE752 /* SearchTokenField */,
 				DADE91FF17B51585002AE752 /* Frameworks */,
 				DADE91FE17B51585002AE752 /* Products */,
@@ -103,10 +114,8 @@
 		DADE920617B51585002AE752 /* SearchTokenField */ = {
 			isa = PBXGroup;
 			children = (
-				DA7EE9CD17B51AAB006C1669 /* Tag.h */,
-				DA7EE9CE17B51AAB006C1669 /* Tag.m */,
-				DA7EE9D017B51AC8006C1669 /* List.h */,
-				DA7EE9D117B51AC8006C1669 /* List.m */,
+				DA7EE9D817B52AE6006C1669 /* TCSearchField */,
+				DA7EE9DD17B52BE2006C1669 /* Model */,
 				DADE921217B51585002AE752 /* AppDelegate.h */,
 				DADE921317B51585002AE752 /* AppDelegate.m */,
 				DADE921517B51586002AE752 /* MainMenu.xib */,

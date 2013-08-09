@@ -30,8 +30,24 @@
     ]];
     // Insert code here to initialize your application
     searchFieldController = [[SearchFieldController alloc] initWithTokenField:self.tokenField];
+    searchFieldController.delegate = self;
     [searchFieldController.tags addObjectsFromArray:tags];
     [searchFieldController.lists addObjectsFromArray:lists];
+}
+
+- (IBAction)getSearchTokensAction:(id)sender
+{
+    [searchFieldController getElements];
+}
+
+#pragma mark - SearchField Delegate
+- (void)searchFieldDelegateTextDidChance
+{
+    NSLog(@"Text SearchField Chance");
+}
+- (void)searchFieldDelegateTags:(NSMutableArray *)tagStringArray lists:(NSMutableArray *)listsStringArray otherToken:(NSMutableArray *)otherToken
+{
+    NSLog(@"Tokens:\n\tTags: %@\n\tLists: %@\n\tOther: %@", tagStringArray, listsStringArray, otherToken);
 }
 
 @end

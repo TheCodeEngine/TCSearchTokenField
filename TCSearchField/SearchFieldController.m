@@ -53,7 +53,9 @@
 
 @implementation SearchFieldController
 {
-    NSButton *magButton;
+    NSMutableArray *tagsTokens;
+    NSMutableArray *listsTokens;
+    NSMutableArray *otherTokens;
 }
 
 - (id)initWithTokenField:(NSTokenField *)tokenField;
@@ -65,6 +67,9 @@
         _searchTokenField.delegate = self;
         _tags = [[NSMutableArray alloc] init];
         _lists = [[NSMutableArray alloc] init];
+        tagsTokens = [[NSMutableArray alloc] init];
+        listsTokens = [[NSMutableArray alloc] init];
+        otherTokens = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -101,7 +106,11 @@
 
 - (NSString *)tokenField:(NSTokenField *)tokenFieldArg displayStringForRepresentedObject:(RepresentedObject *)representedObject
 {
-    if ( representedObject.isTag )
+    if ( representedObject.isTag && representedObject.isList )
+    {
+        return [NSString stringWithFormat:@"Both - %@", representedObject.string];
+    }
+    else if ( representedObject.isTag )
     {
         return [NSString stringWithFormat:@"Tag - %@", representedObject.string];
     }
@@ -127,13 +136,42 @@
     }
 }
 
-- (NSMenu *)tokenField:(NSTokenField *)tokenField menuForRepresentedObject:(id)representedObject
+- (NSMenu *)tokenField:(NSTokenField *)tokenField menuForRepresentedObject:(RepresentedObject *)representedObject
 {
     NSMenu *tokenMenu = [[NSMenu alloc] init];
     NSMenuItem *artistItem = [[NSMenuItem alloc] init];
-    [artistItem setTitle:@"Test"];
+    [artistItem setTitle:representedObject.string];
     [tokenMenu addItem:artistItem];
     return tokenMenu;
+}
+
+- (void)getElements
+{
+    [tagsTokens removeAllObjects]; [listsTokens removeAllObjects]; [otherTokens removeAllObjects];
+    NSArray *searchTokens = [self.searchTokenField.stringValue componentsSeparatedByString:@","];
+    [searchTokens enumerateObjectsUsingBlock:^(NSString *token, NSUInteger idx, BOOL *stop) {
+        if ( [token hasPrefix:@"Tag - "] )
+        {
+            [tagsTokens addObject:[token stringByReplacingOccurrencesOfString:@"Tag - " withString:@""]];
+        }
+        else if ( [token hasPrefix:@"List - "] )
+        {
+            [listsTokens addObject:[token stringByReplacingOccurrencesOfString:@"List - " withString:@""]];
+        }
+        else if ( [token hasPrefix:@"Both - "] )
+        {
+            [tagsTokens addObject:[token stringByReplacingOccurrencesOfString:@"Both - " withString:@""]];
+            [listsTokens addObject:[token stringByReplacingOccurrencesOfString:@"Both - " withString:@""]];
+        }
+        else
+        {
+            [otherTokens addObject:token];
+        }
+    }];
+    if ( self.delegate && [self.delegate respondsToSelector:@selector(searchFieldDelegateTags:lists:otherToken:)] )
+    {
+        [self.delegate searchFieldDelegateTags:tagsTokens lists:listsTokens otherToken:otherTokens];
+    }
 }
 
 @end

@@ -26,8 +26,6 @@
 @property (strong) NSMutableArray *tags;
 @property (strong) NSMutableArray *lists;
 
-- (NSMutableArray *)tagsStringArray;
-- (NSMutableArray *)listsStringArray;
-- (NSMutableArray *)searchWord;
+- (void)getElements;
 
 @end

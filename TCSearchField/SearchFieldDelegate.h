@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol SearchFieldDelegate <NSObject>
+- (void)searchFieldDelegateTags:(NSMutableArray *)tagStringArray lists:(NSMutableArray *)listsStringArray otherToken:(NSMutableArray *)otherToken;
+@optional
 - (void)searchFieldDelegateTextDidChance;
 @end
