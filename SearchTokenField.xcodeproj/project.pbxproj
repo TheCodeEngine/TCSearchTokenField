@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA7EE9CF17B51AAB006C1669 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE9CE17B51AAB006C1669 /* Tag.m */; };
+		DA7EE9D217B51AC8006C1669 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE9D117B51AC8006C1669 /* List.m */; };
+		DADE920117B51585002AE752 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADE920017B51585002AE752 /* Cocoa.framework */; };
+		DADE920B17B51585002AE752 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DADE920917B51585002AE752 /* InfoPlist.strings */; };
+		DADE920D17B51585002AE752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE920C17B51585002AE752 /* main.m */; };
+		DADE921117B51585002AE752 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DADE920F17B51585002AE752 /* Credits.rtf */; };
+		DADE921417B51585002AE752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE921317B51585002AE752 /* AppDelegate.m */; };
+		DADE921717B51586002AE752 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADE921517B51586002AE752 /* MainMenu.xib */; };
+		DADE922A17B5166F002AE752 /* SearchFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE922917B5166F002AE752 /* SearchFieldController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA7EE9CD17B51AAB006C1669 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		DA7EE9CE17B51AAB006C1669 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		DA7EE9D017B51AC8006C1669 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		DA7EE9D117B51AC8006C1669 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		DA7EE9D617B5254B006C1669 /* SearchFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFieldDelegate.h; sourceTree = "<group>"; };
+		DADE91FD17B51585002AE752 /* SearchTokenField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchTokenField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADE920017B51585002AE752 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DADE920317B51585002AE752 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DADE920417B51585002AE752 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DADE920517B51585002AE752 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DADE920817B51585002AE752 /* SearchTokenField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SearchTokenField-Info.plist"; sourceTree = "<group>"; };
+		DADE920A17B51585002AE752 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DADE920C17B51585002AE752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DADE920E17B51585002AE752 /* SearchTokenField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SearchTokenField-Prefix.pch"; sourceTree = "<group>"; };
+		DADE921017B51585002AE752 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DADE921217B51585002AE752 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DADE921317B51585002AE752 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DADE921617B51586002AE752 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DADE922817B5166F002AE752 /* SearchFieldController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFieldController.h; sourceTree = "<group>"; };
+		DADE922917B5166F002AE752 /* SearchFieldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchFieldController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DADE91FA17B51585002AE752 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADE920117B51585002AE752 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA7EE9D717B52556006C1669 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EE9D617B5254B006C1669 /* SearchFieldDelegate.h */,
+				DADE922817B5166F002AE752 /* SearchFieldController.h */,
+				DADE922917B5166F002AE752 /* SearchFieldController.m */,
+			);
+			name = SearchBar;
+			sourceTree = "<group>";
+		};
+		DADE91F417B51585002AE752 = {
+			isa = PBXGroup;
+			children = (
+				DADE920617B51585002AE752 /* SearchTokenField */,
+				DADE91FF17B51585002AE752 /* Frameworks */,
+				DADE91FE17B51585002AE752 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DADE91FE17B51585002AE752 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DADE91FD17B51585002AE752 /* SearchTokenField.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DADE91FF17B51585002AE752 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DADE920017B51585002AE752 /* Cocoa.framework */,
+				DADE920217B51585002AE752 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DADE920217B51585002AE752 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DADE920317B51585002AE752 /* AppKit.framework */,
+				DADE920417B51585002AE752 /* CoreData.framework */,
+				DADE920517B51585002AE752 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DADE920617B51585002AE752 /* SearchTokenField */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EE9CD17B51AAB006C1669 /* Tag.h */,
+				DA7EE9CE17B51AAB006C1669 /* Tag.m */,
+				DA7EE9D017B51AC8006C1669 /* List.h */,
+				DA7EE9D117B51AC8006C1669 /* List.m */,
+				DADE921217B51585002AE752 /* AppDelegate.h */,
+				DADE921317B51585002AE752 /* AppDelegate.m */,
+				DA7EE9D717B52556006C1669 /* SearchBar */,
+				DADE921517B51586002AE752 /* MainMenu.xib */,
+				DADE920717B51585002AE752 /* Supporting Files */,
+			);
+			path = SearchTokenField;
+			sourceTree = "<group>";
+		};
+		DADE920717B51585002AE752 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DADE920817B51585002AE752 /* SearchTokenField-Info.plist */,
+				DADE920917B51585002AE752 /* InfoPlist.strings */,
+				DADE920C17B51585002AE752 /* main.m */,
+				DADE920E17B51585002AE752 /* SearchTokenField-Prefix.pch */,
+				DADE920F17B51585002AE752 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DADE91FC17B51585002AE752 /* SearchTokenField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADE921A17B51586002AE752 /* Build configuration list for PBXNativeTarget "SearchTokenField" */;
+			buildPhases = (
+				DADE91F917B51585002AE752 /* Sources */,
+				DADE91FA17B51585002AE752 /* Frameworks */,
+				DADE91FB17B51585002AE752 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchTokenField;
+			productName = SearchTokenField;
+			productReference = DADE91FD17B51585002AE752 /* SearchTokenField.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DADE91F517B51585002AE752 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = TheCodeEngine;
+			};
+			buildConfigurationList = DADE91F817B51585002AE752 /* Build configuration list for PBXProject "SearchTokenField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DADE91F417B51585002AE752;
+			productRefGroup = DADE91FE17B51585002AE752 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DADE91FC17B51585002AE752 /* SearchTokenField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DADE91FB17B51585002AE752 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADE920B17B51585002AE752 /* InfoPlist.strings in Resources */,
+				DADE921117B51585002AE752 /* Credits.rtf in Resources */,
+				DADE921717B51586002AE752 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DADE91F917B51585002AE752 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADE920D17B51585002AE752 /* main.m in Sources */,
+				DADE921417B51585002AE752 /* AppDelegate.m in Sources */,
+				DADE922A17B5166F002AE752 /* SearchFieldController.m in Sources */,
+				DA7EE9CF17B51AAB006C1669 /* Tag.m in Sources */,
+				DA7EE9D217B51AC8006C1669 /* List.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DADE920917B51585002AE752 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADE920A17B51585002AE752 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DADE920F17B51585002AE752 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADE921017B51585002AE752 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DADE921517B51586002AE752 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADE921617B51586002AE752 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DADE921817B51586002AE752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DADE921917B51586002AE752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DADE921B17B51586002AE752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SearchTokenField/SearchTokenField-Prefix.pch";
+				INFOPLIST_FILE = "SearchTokenField/SearchTokenField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DADE921C17B51586002AE752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SearchTokenField/SearchTokenField-Prefix.pch";
+				INFOPLIST_FILE = "SearchTokenField/SearchTokenField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DADE91F817B51585002AE752 /* Build configuration list for PBXProject "SearchTokenField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADE921817B51586002AE752 /* Debug */,
+				DADE921917B51586002AE752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADE921A17B51586002AE752 /* Build configuration list for PBXNativeTarget "SearchTokenField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADE921B17B51586002AE752 /* Debug */,
+				DADE921C17B51586002AE752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DADE91F517B51585002AE752 /* Project object */;
+}
